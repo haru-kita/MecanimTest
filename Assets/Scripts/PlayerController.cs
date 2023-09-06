@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         //HPを取得
-        hpText.GetComponent<Text>().text = "HP:" + playerStatusSO.ToString(); 
+        hpText.GetComponent<Text>().text = "HP:" + playerStatusSO.HP.ToString(); 
 
     }
 
@@ -27,38 +27,38 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //HPを取得
-        hpText.GetComponent<Text>().text = "HP:" + playerStatusSO.ToString();
+        hpText.GetComponent<Text>().text = "HP:" + playerStatusSO.HP.ToString();
 
         // 前移動
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             rb.velocity = transform.forward * speed;
             this.anim.SetBool("Run" , true);
         }
 
         // 後移動
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             rb.velocity = - transform.forward * speed;
             this.anim.SetBool("Run" , true);
         }
 
         // 右移動
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             rb.velocity = transform.right * speed;
             this.anim.SetBool("Run" , true);
         }
 
         // 左移動
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             rb.velocity = -transform.right * speed;
             this.anim.SetBool("Run" , true);
         }
 
         //キーを離すとIdleに戻る
-        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow)  )
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)  )
         {
             anim.SetBool("Run" , false);
         }
