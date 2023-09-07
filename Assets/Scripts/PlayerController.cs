@@ -69,17 +69,20 @@ public class PlayerController : MonoBehaviour
         //キーマウスがクリックされた場合
         if (Input.GetMouseButtonDown (0))
         {
-            //Animatorコンポーネントを取得し"Attock"をtrueにする
+            //Animatorコンポーネントを取得し"Attock"トリガーを実行する
             this.anim.SetTrigger("Attack");
         }
 
     }
 
-    //他のオブジェクトと接触した場合の処理
-    void OnCollisionEnter(Collision col)
+    //敵にダメージを与える関数
+    void OnTriggerEnter(Collider col)
     {
-        //HPを減らす
-        currentHP = currentHP - 10;
+        if (col.gameObject.CompareTag("Weapon"))
+        {
+            //Debug.Log("WeaponCollider");
+            currentHP = currentHP - 10;
+        }
     }
 
 }

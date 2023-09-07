@@ -12,6 +12,7 @@ public class PlayerStatusSO : ScriptableObject
     [SerializeField] int defence;
 
 
-    //これを書かないとエラーになる
-    public int HP { get => hp; }
+    //これを書いておけば他スクリプトから変数読み込める？
+    public int HP { get { return hp; } }
+    public int ATTACK { get { return attack; } }
 }
