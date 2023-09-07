@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 121295947}
+    - target: {fileID: 719349299, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
+      propertyPath: enemyStatusSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c1453a262a2e964b9fb482e1be60050, type: 2}
     - target: {fileID: 719349302, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -3984,9 +3988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6700aab20faa2e4b8b596f27c0192b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freeLookCam: {fileID: 488435729}
-  minYAngle: -45
-  maxYAngle: 45
 --- !u!1001 &333136771
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,5 +13,5 @@ public class PlayerStatusSO : ScriptableObject
 
 
     //‚±‚ê‚ð‘‚©‚È‚¢‚ÆƒGƒ‰[‚É‚È‚é
-    public int HP { get => hp; set => hp = value; }
+    public int HP { get => hp; }
 }

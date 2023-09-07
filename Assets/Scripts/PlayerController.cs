@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     private Animator anim;
-    private float speed = 5.0f;
+    private float speed = 5.0f; //移動速度
+    private int currentHP;
 
     [SerializeField] PlayerStatusSO playerStatusSO;
     [SerializeField] Text hpText;
@@ -18,8 +19,10 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        //HPを取得
-        hpText.GetComponent<Text>().text = "HP:" + playerStatusSO.HP.ToString(); 
+        //HPコンポーネントを取得
+        hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
+        //playerStatusSOコンポーネントのHPの値を代入
+        currentHP = playerStatusSO.HP;
 
     }
 
@@ -27,7 +30,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //HPを取得
-        hpText.GetComponent<Text>().text = "HP:" + playerStatusSO.HP.ToString();
+        hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
 
         // 前移動
         if (Input.GetKey(KeyCode.W))
@@ -76,7 +79,7 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         //HPを減らす
-        playerStatusSO.HP = playerStatusSO.HP - 10;
+        currentHP = currentHP - 10;
     }
 
 }
