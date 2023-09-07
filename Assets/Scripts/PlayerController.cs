@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     private Animator anim;
-    private float speed = 5.0f; //移動速度
+
     private int currentHP;
 
     [SerializeField] PlayerStatusSO playerStatusSO;
@@ -32,40 +32,6 @@ public class PlayerController : MonoBehaviour
         //HPを取得
         hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
 
-        // 前移動
-        if (Input.GetKey(KeyCode.W))
-        {
-            rb.velocity = transform.forward * speed;
-            this.anim.SetBool("Run" , true);
-        }
-
-        // 後移動
-        if (Input.GetKey(KeyCode.S))
-        {
-            rb.velocity = - transform.forward * speed;
-            this.anim.SetBool("Run" , true);
-        }
-
-        // 右移動
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.velocity = transform.right * speed;
-            this.anim.SetBool("Run" , true);
-        }
-
-        // 左移動
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb.velocity = -transform.right * speed;
-            this.anim.SetBool("Run" , true);
-        }
-
-        //キーを離すとIdleに戻る
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)  )
-        {
-            anim.SetBool("Run" , false);
-        }
-
         //キーマウスがクリックされた場合
         if (Input.GetMouseButtonDown (0))
         {
@@ -73,16 +39,6 @@ public class PlayerController : MonoBehaviour
             this.anim.SetTrigger("Attack");
         }
 
-    }
-
-    //敵にダメージを与える関数
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.CompareTag("Weapon"))
-        {
-            //Debug.Log("WeaponCollider");
-            currentHP = currentHP - 10;
-        }
     }
 
 }

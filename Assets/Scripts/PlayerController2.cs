@@ -6,13 +6,16 @@ public class PlayerController2 : MonoBehaviour
 {
     float inputHorizontal;
     float inputVertical;
-    Rigidbody rb;
+
+    private Rigidbody rb;
+    private Animator anim;
 
     float moveSpeed = 3f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -36,6 +39,11 @@ public class PlayerController2 : MonoBehaviour
         if (moveForward != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveForward);
+            this.anim.SetBool("Run", true);
+        }
+        else
+        {
+            this.anim.SetBool("Run", false);
         }
     }
 }

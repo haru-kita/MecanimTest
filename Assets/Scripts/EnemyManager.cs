@@ -26,7 +26,7 @@ public class EnemyManager : MonoBehaviour
     //Player‚ÉUŒ‚‚³‚ê‚½‚ÌŠÖ”
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Weapon") )
+        if (col.gameObject.CompareTag("Weapon"))
         {
             currentHP = currentHP - playerStatusSO.ATTACK;
         }
