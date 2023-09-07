@@ -19,7 +19,7 @@ public class EnemyStatusSO : ScriptableObject
 
         //‚±‚ê‚ð‘‚©‚È‚¢‚ÆƒGƒ‰[‚É‚È‚é
         public int HP { get => hp;}
-
+        public int DEFENCE { get => defence; }
     }
 
 

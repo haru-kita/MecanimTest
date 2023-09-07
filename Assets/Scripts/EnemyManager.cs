@@ -8,19 +8,25 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] EnemyStatusSO enemyStatusSO;
     [SerializeField] PlayerStatusSO playerStatusSO;
 
-    private int currentHP;
+    private int enemyHP;
+    private int damage;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        currentHP = enemyStatusSO.enemyStatusList[0].HP;
+        enemyHP = enemyStatusSO.enemyStatusList[0].HP;
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+        Debug.Log(enemyHP);
 
+        if (enemyHPÅ@< 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     //PlayerÇ…çUåÇÇ≥ÇÍÇΩéûÇÃä÷êî
@@ -28,7 +34,13 @@ public class EnemyManager : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Weapon"))
         {
-            currentHP = currentHP - playerStatusSO.ATTACK;
+            damage = (int)(playerStatusSO.ATTACK / 2 - enemyStatusSO.enemyStatusList[0].DEFENCE / 4);
+
+            if (damage > 0)
+            {
+                enemyHP = enemyHP - damage;
+            }
+
         }
     }
 }

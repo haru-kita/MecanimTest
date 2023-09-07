@@ -16,5 +16,5 @@ MonoBehaviour:
   - EnemyName: slime
     hp: 30
     mp: 0
-    attack: 3
-    defence: 3
+    attack: 2
+    defence: 2
