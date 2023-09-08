@@ -18,8 +18,8 @@ public class EnemyStatusSO : ScriptableObject
         [SerializeField] int defence;
 
         //‚±‚ê‚ð‘‚©‚È‚¢‚ÆƒGƒ‰[‚É‚È‚é
-        public int HP { get => hp;}
-        public int DEFENCE { get => defence; }
+        public int EnemyHP { get => hp;}
+        public int EnemyDEFENCE { get => defence; }
     }
 
 

@@ -1,45 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    float inputHorizontal;
+    float inputVertical;
+
     private Rigidbody rb;
     private Animator anim;
 
-    private int currentHP;
+    float moveSpeed = 3f;
 
-    [SerializeField] PlayerStatusSO playerStatusSO;
-    [SerializeField] Text hpText;
-
-
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        //HPコンポーネントを取得
-        hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
-        //playerStatusSOコンポーネントのHPの値を代入
-        currentHP = playerStatusSO.HP;
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //HPを取得
-        hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
-
-        //キーマウスがクリックされた場合
-        if (Input.GetMouseButtonDown (0))
-        {
-            //Animatorコンポーネントを取得し"Attock"トリガーを実行する
-            this.anim.SetTrigger("Attack");
-        }
-
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+        inputVertical = Input.GetAxisRaw("Vertical");
     }
 
+    void FixedUpdate()
+    {
+        // カメラの方向から、X-Z平面の単位ベクトルを取得
+        Vector3 cameraForward = Vector3.Scale(Camera.main.transform.forward, new Vector3(1, 0, 1)).normalized;
+
+        // 方向キーの入力値とカメラの向きから、移動方向を決定
+        Vector3 moveForward = cameraForward * inputVertical + Camera.main.transform.right * inputHorizontal;
+
+        // 移動方向にスピードを掛ける。ジャンプや落下がある場合は、別途Y軸方向の速度ベクトルを足す。
+        rb.velocity = moveForward * moveSpeed + new Vector3(0, rb.velocity.y, 0);
+
+        // キャラクターの向きを進行方向に
+        if (moveForward != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(moveForward);
+            this.anim.SetBool("Run", true);
+        }
+        else
+        {
+            this.anim.SetBool("Run", false);
+        }
+    }
 }
 

@@ -13,6 +13,6 @@ public class PlayerStatusSO : ScriptableObject
 
 
     //これを書いておけば他スクリプトから変数読み込める？
-    public int HP { get { return hp; } }
-    public int ATTACK { get { return attack; } }
+    public int PlayerHP { get { return hp; } }
+    public int PlayerATTACK { get { return attack; } }
 }
