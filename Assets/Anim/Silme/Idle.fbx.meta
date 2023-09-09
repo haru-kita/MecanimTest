@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 50a5a5a42fb94fd47861fe20945d7404
+guid: 0868bb65a22fee746a0afebbebd5e6ae
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -28,7 +28,7 @@ ModelImporter:
     400020: Spine01
     400022: UpperEyeCover
     4300000: Slime
-    7400000: IdleNormal
+    7400000: IdleBattle
     9500000: //RootNode
     13700000: Slime
   externalObjects: {}
@@ -60,10 +60,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: IdleNormal
+      name: IdleBattle
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 50
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -29,14 +29,16 @@ public class EnemyManager : MonoBehaviour
     {
         Debug.Log(enemyHP);
 
-        if (enemyHP < 0)
+        /*if (enemyHP < 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
 
             // スコアを加算して表示
             this.score += 500;
             this.scoreText.GetComponent<Text>().text = "得点：" + score;
-        }
+
+            Destroy(this.gameObject);
+        }*/
     }
 
     //Playerに攻撃された時の関数
@@ -53,6 +55,14 @@ public class EnemyManager : MonoBehaviour
                 enemyHP = enemyHP - damage;
             }
 
+            if (enemyHP < 0)
+            {
+                // スコアを加算して表示
+                this.score += 500;
+                this.scoreText.GetComponent<Text>().text = "得点：" + score;
+
+                Destroy(this.gameObject);
+            }
         }
     }
 }
