@@ -420,6 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyStatusSO: {fileID: 11400000, guid: 7c1453a262a2e964b9fb482e1be60050, type: 2}
   playerStatusSO: {fileID: 11400000, guid: 0e90fbbcc850c30438bc9bbcee9014b2, type: 2}
+  scoreValue: 5
 --- !u!1 &4022761074110332082
 GameObject:
   m_ObjectHideFlags: 0

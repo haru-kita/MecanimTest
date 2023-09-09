@@ -8,20 +8,16 @@ public class EnemyManager : MonoBehaviour
 {
     [SerializeField] EnemyStatusSO enemyStatusSO;
     [SerializeField] PlayerStatusSO playerStatusSO;
+    public int scoreValue = 10; //この敵の得点
 
     private int enemyHP;
     private int damage;
-    private GameObject scoreText;
-    private int score = 00000;
     private Animator anim;
 
 
     void Start()
     {
         enemyHP = enemyStatusSO.enemyStatusList[0].EnemyHP;
-
-        this.scoreText = GameObject.Find("ScoreText");
-        this.scoreText.GetComponent<Text>().text = "得点：" + score;
 
         this.anim = GetComponent<Animator>();
 
@@ -50,10 +46,8 @@ public class EnemyManager : MonoBehaviour
 
             if (enemyHP < 0)
             {
-                // スコアを加算して表示
-                this.score += 500;
-                this.scoreText.GetComponent<Text>().text = "得点：" + score;
-
+                // 敵が破壊されたときにスコアを更新
+                ScoreManager.Instance.AddScore(scoreValue);
                 Destroy(this.gameObject);
             }
         }
