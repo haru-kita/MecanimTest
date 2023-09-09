@@ -9,6 +9,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] EnemyStatusSO enemyStatusSO;
     [SerializeField] PlayerStatusSO playerStatusSO;
     public int scoreValue = 10; //この敵の得点
+    public GameObject destroyEffectPrefab; // エフェクト用のプレハブ
 
     private int enemyHP;
     private int damage;
@@ -48,7 +49,13 @@ public class EnemyManager : MonoBehaviour
             {
                 // 敵が破壊されたときにスコアを更新
                 ScoreManager.Instance.AddScore(scoreValue);
+                // 敵を破棄
                 Destroy(this.gameObject);
+                // エフェクトを発生させる
+                if (destroyEffectPrefab != null)
+                {
+                    Instantiate(destroyEffectPrefab, transform.position, Quaternion.identity);
+                }
             }
         }
     }
