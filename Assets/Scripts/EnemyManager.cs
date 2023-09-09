@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] EnemyStatusSO enemyStatusSO;
@@ -14,6 +13,8 @@ public class EnemyManager : MonoBehaviour
     private int damage;
     private GameObject scoreText;
     private int score = 00000;
+    private Animator anim;
+
 
     void Start()
     {
@@ -22,23 +23,15 @@ public class EnemyManager : MonoBehaviour
         this.scoreText = GameObject.Find("ScoreText");
         this.scoreText.GetComponent<Text>().text = "得点：" + score;
 
+        this.anim = GetComponent<Animator>();
+
     }
 
 
     void Update()
     {
-        Debug.Log(enemyHP);
 
-        /*if (enemyHP < 0)
-        {
-            //Destroy(this.gameObject);
 
-            // スコアを加算して表示
-            this.score += 500;
-            this.scoreText.GetComponent<Text>().text = "得点：" + score;
-
-            Destroy(this.gameObject);
-        }*/
     }
 
     //Playerに攻撃された時の関数
