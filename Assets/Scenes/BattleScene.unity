@@ -12850,7 +12850,7 @@ GameObject:
   - component: {fileID: 1547702909}
   - component: {fileID: 1547702908}
   m_Layer: 0
-  m_Name: Audio_whistle
+  m_Name: SE_whistle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15883,7 +15883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9e6ed6d056f1446b3eb74623b81d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 60
+  gameTime: 30
   timeText: {fileID: 1009111539}
   whistleAudioSource: {fileID: 1547702908}
 --- !u!1 &2017327638

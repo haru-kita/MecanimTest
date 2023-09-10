@@ -22,7 +22,7 @@ public class EnemyGenerator : MonoBehaviour
     void Start()
     {
         // ŠÔŠÔŠui•bj‚ğŒˆ’è‚·‚é
-        interval = 10f;
+        interval = 1f;
     }
 
     void Update()

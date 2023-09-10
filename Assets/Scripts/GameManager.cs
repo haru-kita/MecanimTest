@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float gameTime = 120f; // ゲームの時間
+    public float gameTime; // ゲームの時間
     public Text timeText; // 残り時間オブジェクトの参照
     public AudioSource whistleAudioSource; // オーディオソースをここに割り当てます
 
@@ -14,13 +14,23 @@ public class GameManager : MonoBehaviour
     private int currentScore = 0;
 
 
+    // GameManagerのAwakeメソッドを追加
+    private void Awake()
+    {
+        // GameManagerにAudioSourceがアタッチされていることを確認
+        if (whistleAudioSource == null)
+        {
+            Debug.LogError("AudioSourceがアタッチされていません。GameManagerにAudioSourceをアタッチしてください。");
+        }
+    }
+
     void Update()
     {
+
         if (gameTime > 0)
         {
             gameTime -= Time.deltaTime;
             UpdateTimeUI();
-            Debug.Log("Remaining Time: " + gameTime);
         }
 
         if (!gameIsOver)
@@ -44,8 +54,10 @@ public class GameManager : MonoBehaviour
     {
         gameIsOver = true;
 
+        Debug.Log("ホイッスル音再生前");
         // ホイッスルの効果音を再生
         whistleAudioSource.Play();
+        Debug.Log("ホイッスル音再生後");
 
         // 得点を追加
         ScoreManager.Instance.AddScore(currentScore);
