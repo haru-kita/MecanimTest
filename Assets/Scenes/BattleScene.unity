@@ -4771,7 +4771,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &668539840
 PrefabInstance:
@@ -5408,9 +5408,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 9212595639169842241, guid: 35284c9c14af2374c9c9a439d06e8922, type: 3}
   - {fileID: 4022613594168617374, guid: d495f13ef7915734a98d49043507b312, type: 3}
-  maxEnemies: 20
+  - {fileID: 9212595639169842241, guid: 35284c9c14af2374c9c9a439d06e8922, type: 3}
+  maxEnemies: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 264
@@ -5429,7 +5429,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &692849467
 PrefabInstance:
@@ -9049,7 +9049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6568104831297745758, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6568104831297745758, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12965,7 +12965,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1562802438
 PrefabInstance:
@@ -14506,7 +14506,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1778219637
 GameObject:
@@ -15869,7 +15869,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2011126832
 MonoBehaviour:
@@ -15883,7 +15883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9e6ed6d056f1446b3eb74623b81d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 30
+  gameTime: 60
   timeText: {fileID: 1009111539}
   whistleAudioSource: {fileID: 1547702908}
 --- !u!1 &2017327638

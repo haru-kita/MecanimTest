@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4763154826809809022}
   - component: {fileID: 2145112117}
   - component: {fileID: 2145112118}
+  - component: {fileID: 211830413}
   m_Layer: 0
   m_Name: PumpkinA
   m_TagString: Enemy
@@ -133,3 +134,24 @@ MonoBehaviour:
   playerStatusSO: {fileID: 11400000, guid: 0e90fbbcc850c30438bc9bbcee9014b2, type: 2}
   scoreValue: 100
   destroyEffectPrefab: {fileID: 6903510288016217953, guid: b0d801a1e500d2a499c77f626a08a7c9, type: 3}
+--- !u!95 &211830413
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212595639169842241}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6520c6d7889f4c72b416f07f34edd515, type: 3}
+  m_Controller: {fileID: 9100000, guid: 9bbcf96c9a254c5ba654027c656d7b39, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

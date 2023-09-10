@@ -13,11 +13,13 @@ public class EnemyManager : MonoBehaviour
 
     private int enemyHP;
     private int damage;
+    private Animator anim;
 
 
     void Start()
     {
         enemyHP = enemyStatusSO.enemyStatusList[0].EnemyHP;
+        anim = GetComponent<Animator>();
 
     }
 
@@ -33,12 +35,16 @@ public class EnemyManager : MonoBehaviour
         if (col.gameObject.CompareTag("Weapon"))
         {
             damage = (int)(playerStatusSO.PlayerATTACK / 2 - enemyStatusSO.enemyStatusList[0].EnemyDEFENCE / 4);
-            Debug.Log("damage");
 
             if (damage > 0)
             {
-                Debug.Log("HP引かれた値出るはず");
+                Debug.Log("ダメージを受けた！");
                 enemyHP = enemyHP - damage;
+
+                //GetHitアニメーションを再生
+                this.anim.SetTrigger("GetHit");
+
+
             }
 
             if (enemyHP < 0)
