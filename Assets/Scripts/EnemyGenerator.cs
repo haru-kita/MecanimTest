@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyGenerator : MonoBehaviour
 {
     public GameObject[] enemyPrefabs; // g—p‚·‚é“GPrefab‚ÌƒŠƒXƒg
-    public int maxEnemies = 100; // Å‘å‚Ì“G‚Ì”
+    public int maxEnemies; // Å‘å‚Ì“G‚Ì”
     private float interval; // ¶¬ŠÔŠÔŠu
     private float time = 0f; // Œo‰ßŠÔ
 
@@ -16,8 +16,8 @@ public class EnemyGenerator : MonoBehaviour
     public LayerMask obstacleLayer;
 
     // ¶¬”ÍˆÍ‚Ìİ’è
-    public float spawnRangeX = 40f;
-    public float spawnRangeZ = 40f;
+    public float spawnRangeX;
+    public float spawnRangeZ;
 
     void Start()
     {

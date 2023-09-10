@@ -13,21 +13,17 @@ public class EnemyManager : MonoBehaviour
 
     private int enemyHP;
     private int damage;
-    private Animator anim;
 
 
     void Start()
     {
         enemyHP = enemyStatusSO.enemyStatusList[0].EnemyHP;
 
-        this.anim = GetComponent<Animator>();
-
     }
 
 
     void Update()
     {
-
 
     }
 
@@ -49,8 +45,10 @@ public class EnemyManager : MonoBehaviour
             {
                 // 敵が破壊されたときにスコアを更新
                 ScoreManager.Instance.AddScore(scoreValue);
+
                 // 敵を破棄
                 Destroy(this.gameObject);
+
                 // エフェクトを発生させる
                 if (destroyEffectPrefab != null)
                 {
