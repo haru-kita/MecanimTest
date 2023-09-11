@@ -27,20 +27,23 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-        if (gameTime > 0)
+        if (gameTime >= 0)
         {
-            gameTime -= Time.deltaTime;
             UpdateTimeUI();
         }
 
-        if (!gameIsOver)
+        if ( gameTime <= 0 && gameIsOver == false)
         {
-            currentTime += Time.deltaTime;
-            if (currentTime >= gameTime)
-            {
-                EndGame();
-            }
+            EndGame();
+            whistleAudioSource.Play(); //ホイッスル音再生
         }
+
+        if (gameTime <= -1)
+        {
+            SceneManager.LoadScene("ResultScene"); // リザルトシーンに遷移
+        }
+
+        gameTime -= Time.deltaTime;
 
     }
 
@@ -54,10 +57,6 @@ public class GameManager : MonoBehaviour
     {
         gameIsOver = true;
 
-        Debug.Log("ホイッスル音再生前");
-        // ホイッスルの効果音を再生
-        whistleAudioSource.Play();
-        Debug.Log("ホイッスル音再生後");
 
         // 得点を追加
         ScoreManager.Instance.AddScore(currentScore);
@@ -65,15 +64,12 @@ public class GameManager : MonoBehaviour
         // 得点を保存
         SaveScore(currentScore);
 
-
-        // その後の処理
-        SceneManager.LoadScene("ResultScene"); // リザルトシーンに遷移
     }
 
     void SaveScore(int score)
     {
         // 得点を保存する処理をここに追加
-        PlayerPrefs.SetInt("LastScore", score);
+        PlayerPrefs.SetInt("LastScore", ScoreManager.Instance.totalScore);
         // 他の保存方法（データベースなど）を使用することもできます
     }
 }

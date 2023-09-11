@@ -5,7 +5,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance; // シングルトンインスタンス
 
-    private int totalScore = 0; // 合計スコア
+    public int totalScore = 0; // 合計スコア
 
     public Text scoreText; // UI上のスコア表示テキスト
 
