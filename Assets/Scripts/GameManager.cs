@@ -9,20 +9,9 @@ public class GameManager : MonoBehaviour
     public Text timeText; // 残り時間オブジェクトの参照
     public AudioSource whistleAudioSource; // オーディオソースをここに割り当てます
 
-    private float currentTime = 0.0f;
     private bool gameIsOver = false;
     private int currentScore = 0;
 
-
-    // GameManagerのAwakeメソッドを追加
-    private void Awake()
-    {
-        // GameManagerにAudioSourceがアタッチされていることを確認
-        if (whistleAudioSource == null)
-        {
-            Debug.LogError("AudioSourceがアタッチされていません。GameManagerにAudioSourceをアタッチしてください。");
-        }
-    }
 
     void Update()
     {
@@ -70,6 +59,6 @@ public class GameManager : MonoBehaviour
     {
         // 得点を保存する処理をここに追加
         PlayerPrefs.SetInt("LastScore", ScoreManager.Instance.totalScore);
-        // 他の保存方法（データベースなど）を使用することもできます
+
     }
 }
