@@ -9039,6 +9039,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2433615021549844532, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433615021549844535, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2433615021549844536, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
       propertyPath: hpText
       value: 

@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Animator anim;
 
-    float moveSpeed = 3f;
+    float moveSpeed = 8f;
 
     void Start()
     {
