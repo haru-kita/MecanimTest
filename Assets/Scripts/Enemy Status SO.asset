@@ -14,7 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyStatusList:
   - EnemyName: slime
-    hp: 30
+    hp: 11
+    mp: 0
+    attack: 2
+    defence: 2
+  - EnemyName: PumpkinMan
+    hp: 21
+    mp: 0
+    attack: 4
+    defence: 2
+  - EnemyName: Bat
+    hp: 31
+    mp: 0
+    attack: 2
+    defence: 2
+  - EnemyName: Skeleton
+    hp: 41
     mp: 0
     attack: 2
     defence: 2

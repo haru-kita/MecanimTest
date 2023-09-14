@@ -4757,6 +4757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069618a8c945cea458090f389f17a29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalScore: 0
   scoreText: {fileID: 1732343735}
 --- !u!4 &657446817
 Transform:
@@ -5409,8 +5410,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 4022613594168617374, guid: d495f13ef7915734a98d49043507b312, type: 3}
-  - {fileID: 9212595639169842241, guid: 35284c9c14af2374c9c9a439d06e8922, type: 3}
-  maxEnemies: 10
+  - {fileID: 2095824690612744701, guid: cc9c147866531174198aa4755b0a9e7b, type: 3}
+  maxEnemies: 20
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 264
@@ -13953,7 +13954,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694264626}
-  m_LocalRotation: {x: 0.09025819, y: 0.098132566, z: -0.008937422, w: 0.9910316}
+  m_LocalRotation: {x: 0.09025819, y: 0.09813256, z: -0.008937422, w: 0.9910316}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

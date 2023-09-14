@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c62b16489e9adce47bea75bf0f0c7a6e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemyStatusSO: {fileID: 11400000, guid: 7c1453a262a2e964b9fb482e1be60050, type: 2}
+  - playerStatusSO: {fileID: 11400000, guid: 0e90fbbcc850c30438bc9bbcee9014b2, type: 2}
+  - destroyEffectPrefab: {fileID: 6903510288016217953, guid: b0d801a1e500d2a499c77f626a08a7c9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

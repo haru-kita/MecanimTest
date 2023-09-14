@@ -38,7 +38,7 @@ public class EnemyManager : MonoBehaviour
 
             if (damage > 0)
             {
-                Debug.Log("ダメージを受けた！");
+
                 enemyHP = enemyHP - damage;
 
                 //GetHitアニメーションを再生
