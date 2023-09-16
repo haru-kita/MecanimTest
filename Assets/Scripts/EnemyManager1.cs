@@ -14,13 +14,21 @@ public class EnemyManager1 : MonoBehaviour
     private int damage;
     private Animator anim;
 
+    //オーディオ用の変数
+    private AudioSource audioSource;
+    public AudioClip sound;
+
 
     void Start()
     {
         // 敵のHPを初期化
         enemyHP = enemyStatusSO.enemyStatusList[1].EnemyHP;
         anim = GetComponent<Animator>();
+
+        // オーディオ（AudioSourceコンポーネント）を取得
+        audioSource = GetComponent<AudioSource>();
     }
+
 
     // Playerに攻撃された時の関数
     void OnTriggerEnter(Collider col)
@@ -40,12 +48,15 @@ public class EnemyManager1 : MonoBehaviour
 
                 if (enemyHP <= 0)
                 {
-                    Debug.Log("HPがゼロになった");
+
                     // Deathアニメーションを再生
                     this.anim.SetTrigger("Death");
 
                     // 敵が破壊されたときにスコアを更新
                     ScoreManager.Instance.AddScore(scoreValue);
+
+                    // オーディオを再生
+                    AudioSource.PlayClipAtPoint(sound, transform.position);
 
                     // 敵を破棄
                     Destroy(this.gameObject);
@@ -59,4 +70,6 @@ public class EnemyManager1 : MonoBehaviour
             }
         }
     }
+
+
 }
