@@ -49,6 +49,7 @@ public class EnemyManager1 : MonoBehaviour
 
                     // Deathアニメーションを再生
                     this.anim.SetTrigger("Death");
+                    Debug.Log("Deathモーション");
 
                     // 敵が破壊されたときにスコアを更新
                     ScoreManager.Instance.AddScore(scoreValue);
