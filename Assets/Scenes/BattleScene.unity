@@ -9169,9 +9169,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 732485462, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
-      propertyPath: hitEffect
+      propertyPath: hitEffectPrefab
       value: 
-      objectReference: {fileID: 6540472896207461990, guid: 4e707dffc930fc44ca7af26a65453222, type: 3}
+      objectReference: {fileID: 54642855661174743, guid: 4e707dffc930fc44ca7af26a65453222, type: 3}
     - target: {fileID: 2433615021549844536, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
       propertyPath: hpText
       value: 
@@ -14074,7 +14074,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694264626}
-  m_LocalRotation: {x: 0.09025819, y: 0.098132566, z: -0.008937422, w: 0.9910316}
+  m_LocalRotation: {x: 0.09025819, y: 0.09813256, z: -0.008937422, w: 0.9910316}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
