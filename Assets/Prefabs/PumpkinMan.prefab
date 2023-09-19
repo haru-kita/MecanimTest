@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 4728983840771567068}
   m_Layer: 0
   m_Name: PumpkinMan
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1325,6 +1325,7 @@ MonoBehaviour:
   playerStatusSO: {fileID: 11400000, guid: 0e90fbbcc850c30438bc9bbcee9014b2, type: 2}
   scoreValue: 1130
   destroyEffectPrefab: {fileID: 6903510288016217953, guid: b0d801a1e500d2a499c77f626a08a7c9, type: 3}
+  hitEffectPrefab: {fileID: 6540472896207461990, guid: 4e707dffc930fc44ca7af26a65453222, type: 3}
   sound: {fileID: 8300000, guid: 543385922cd839748815d227c3b1658c, type: 3}
 --- !u!82 &4728983840771567068
 AudioSource:

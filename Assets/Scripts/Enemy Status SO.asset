@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyStatusList:
   - EnemyName: slime
-    hp: 11
+    hp: 21
     mp: 0
     attack: 2
     defence: 2
   - EnemyName: PumpkinMan
-    hp: 21
+    hp: 31
     mp: 0
     attack: 4
     defence: 2

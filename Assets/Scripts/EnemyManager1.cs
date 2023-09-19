@@ -7,17 +7,17 @@ public class EnemyManager1 : MonoBehaviour
 {
     [SerializeField] EnemyStatusSO enemyStatusSO;
     [SerializeField] PlayerStatusSO playerStatusSO;
-    public int scoreValue = 10; //この敵の得点
-    public GameObject destroyEffectPrefab; // エフェクト用のプレハブ
+    public int scoreValue = 10; // この敵の得点
+    public GameObject destroyEffectPrefab; // 消滅エフェクト用
+    public GameObject hitEffectPrefab; // ヒットエフェクト用
 
     private int enemyHP;
     private int damage;
     private Animator anim;
 
-    //オーディオ用の変数
+    // オーディオ用の変数
     private AudioSource audioSource;
     public AudioClip sound;
-
 
     void Start()
     {
@@ -29,7 +29,6 @@ public class EnemyManager1 : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-
     // Playerに攻撃された時の関数
     void OnTriggerEnter(Collider col)
     {
@@ -39,7 +38,7 @@ public class EnemyManager1 : MonoBehaviour
 
             if (damage > 0)
             {
-                Debug.Log("ヒット");
+                Debug.Log("パンプキンマンにヒット");
                 // GetHitアニメーションを再生
                 this.anim.SetTrigger("GetHit");
 
@@ -58,10 +57,17 @@ public class EnemyManager1 : MonoBehaviour
                     // オーディオを再生
                     AudioSource.PlayClipAtPoint(sound, transform.position);
 
+                    // ヒットエフェクトを発生させる
+                    Debug.Log("ヒットエフェクト再生中");
+                    if (hitEffectPrefab != null)
+                    {
+                        Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
+                    }
+
                     // 敵を破棄
                     Destroy(this.gameObject);
 
-                    // エフェクトを発生させる
+                    // 消滅エフェクトを発生させる
                     if (destroyEffectPrefab != null)
                     {
                         Instantiate(destroyEffectPrefab, transform.position, Quaternion.identity);
@@ -70,6 +76,4 @@ public class EnemyManager1 : MonoBehaviour
             }
         }
     }
-
-
 }
