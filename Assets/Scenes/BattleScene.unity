@@ -9168,6 +9168,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 732485462, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 6540472896207461990, guid: 4e707dffc930fc44ca7af26a65453222, type: 3}
     - target: {fileID: 2433615021549844536, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
       propertyPath: hpText
       value: 

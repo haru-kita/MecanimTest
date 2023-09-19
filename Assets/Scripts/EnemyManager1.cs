@@ -9,7 +9,6 @@ public class EnemyManager1 : MonoBehaviour
     [SerializeField] PlayerStatusSO playerStatusSO;
     public int scoreValue = 10; // この敵の得点
     public GameObject destroyEffectPrefab; // 消滅エフェクト用
-    public GameObject hitEffectPrefab; // ヒットエフェクト用
 
     private int enemyHP;
     private int damage;
@@ -38,7 +37,7 @@ public class EnemyManager1 : MonoBehaviour
 
             if (damage > 0)
             {
-                Debug.Log("パンプキンマンにヒット");
+
                 // GetHitアニメーションを再生
                 this.anim.SetTrigger("GetHit");
 
@@ -56,13 +55,6 @@ public class EnemyManager1 : MonoBehaviour
 
                     // オーディオを再生
                     AudioSource.PlayClipAtPoint(sound, transform.position);
-
-                    // ヒットエフェクトを発生させる
-                    Debug.Log("ヒットエフェクト再生中");
-                    if (hitEffectPrefab != null)
-                    {
-                        Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
-                    }
 
                     // 敵を破棄
                     Destroy(this.gameObject);
