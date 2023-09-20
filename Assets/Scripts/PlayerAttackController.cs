@@ -1,55 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerAttackController : MonoBehaviour
 {
-    private Rigidbody rb;
     private Animator anim;
-    private int currentHP;
-
-    //[SerializeField] PlayerStatusSO playerStatusSO;
-    //[SerializeField] Text hpText;
-
     public AudioClip sound1;
-    AudioSource audioSource;
+    private AudioSource audioSource;
 
+    private bool isRotating; // 新しい変数を追加
 
-    // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-
-        //HPコンポーネントを取得
-        //hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
-
-        //playerStatusSOコンポーネントのHPの値を代入
-        //currentHP = playerStatusSO.PlayerHP;
-
-        // サウンドのコンポーネントを取得
         audioSource = GetComponent<AudioSource>();
+        isRotating = false; // 初期状態では回転攻撃はオフ
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //HPを取得
-        //hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
-
-        //キーマウスがクリックされた場合
-        if (Input.GetMouseButtonDown (0))
+        if (Input.GetMouseButtonDown(0))
         {
-            //Animatorコンポーネントを取得し"Attock"トリガーを実行する
-            this.anim.SetTrigger("Attack");
-
-            // 武器音(sound1)を鳴らす
+            anim.SetTrigger("Attack");
             audioSource.PlayOneShot(sound1);
         }
 
+        // マウスの右クリックが押されている間、回転攻撃を実行
+        if (Input.GetMouseButton(1))
+        {
+            isRotating = true;
+        }
+        else
+        {
+            isRotating = false;
+        }
+
+        // 回転攻撃の実行状態に応じてトリガーをセット
+        if (isRotating)
+        {
+            anim.SetTrigger("RotAttack");
+        }
     }
-
 }
-

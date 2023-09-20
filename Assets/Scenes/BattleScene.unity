@@ -7208,7 +7208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &847896479
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9167,14 +9167,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 732485462, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
-      propertyPath: hitEffectPrefab
-      value: 
-      objectReference: {fileID: 54642855661174743, guid: 4e707dffc930fc44ca7af26a65453222, type: 3}
-    - target: {fileID: 2433615021549844536, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
-      propertyPath: hpText
-      value: 
-      objectReference: {fileID: 847896480}
     - target: {fileID: 5795367631858379236, guid: e413864a2f4f89c4da0fdc81db0a0c08, type: 3}
       propertyPath: m_Name
       value: Player
