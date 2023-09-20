@@ -581,6 +581,10 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 5840823481168374041, guid: 9da491799d733234aa30712eb3f17300, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840823481168374041, guid: 9da491799d733234aa30712eb3f17300, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 50
       objectReference: {fileID: 0}
