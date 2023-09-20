@@ -10,8 +10,8 @@ public class PlayerAttackController : MonoBehaviour
     private Animator anim;
     private int currentHP;
 
-    [SerializeField] PlayerStatusSO playerStatusSO;
-    [SerializeField] Text hpText;
+    //[SerializeField] PlayerStatusSO playerStatusSO;
+    //[SerializeField] Text hpText;
 
     public AudioClip sound1;
     AudioSource audioSource;
@@ -22,10 +22,13 @@ public class PlayerAttackController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+
         //HPコンポーネントを取得
-        hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
+        //hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
+
         //playerStatusSOコンポーネントのHPの値を代入
-        currentHP = playerStatusSO.PlayerHP;
+        //currentHP = playerStatusSO.PlayerHP;
+
         // サウンドのコンポーネントを取得
         audioSource = GetComponent<AudioSource>();
     }
@@ -34,7 +37,7 @@ public class PlayerAttackController : MonoBehaviour
     void Update()
     {
         //HPを取得
-        hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
+        //hpText.GetComponent<Text>().text = "HP:" + currentHP.ToString();
 
         //キーマウスがクリックされた場合
         if (Input.GetMouseButtonDown (0))
