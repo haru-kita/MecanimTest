@@ -856,6 +856,10 @@ PrefabInstance:
       value: Fence Wall A (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3040,7 +3044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 339807045}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'Fence Wall '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3802,6 +3806,10 @@ PrefabInstance:
       value: Fence Wall C (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4112,6 +4120,10 @@ PrefabInstance:
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4852,6 +4864,10 @@ PrefabInstance:
       value: Cemetery_Pillar B (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4916,6 +4932,10 @@ PrefabInstance:
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar A (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6264,7 +6284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766149094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fence wall corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6500,6 +6520,10 @@ PrefabInstance:
       value: Cemetery_Pillar A (5)
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6599,7 +6623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 812708400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8182,6 +8206,10 @@ PrefabInstance:
       value: Cemetery_Pillar B (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8246,6 +8274,10 @@ PrefabInstance:
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8422,6 +8454,10 @@ PrefabInstance:
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_Name
       value: Fence Wall C (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8757,6 +8793,10 @@ PrefabInstance:
       value: Fence Wall C (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8843,6 +8883,10 @@ PrefabInstance:
     - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
       propertyPath: m_Name
       value: Fence Wall A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9271,6 +9315,10 @@ PrefabInstance:
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_Name
       value: Fence Wall C (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9772,6 +9820,10 @@ PrefabInstance:
       value: Cemetery_Pillar A (9)
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -10036,6 +10088,10 @@ PrefabInstance:
       value: Cemetery_Pillar A (2)
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -10100,6 +10156,10 @@ PrefabInstance:
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10434,6 +10494,10 @@ PrefabInstance:
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11212,6 +11276,10 @@ PrefabInstance:
       value: Fence_wall_corner_C
       objectReference: {fileID: 0}
     - target: {fileID: 7081517344155493489, guid: 31034aa7e90fe4847babda561dbdf2d0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081517344155493489, guid: 31034aa7e90fe4847babda561dbdf2d0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11552,6 +11620,10 @@ PrefabInstance:
       value: Fence Wall B (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1963584078338303645, guid: 9553b621a564db5419b3bf2d8cd74852, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963584078338303645, guid: 9553b621a564db5419b3bf2d8cd74852, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11572,6 +11644,10 @@ PrefabInstance:
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar B (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4923985419264131259, guid: 059d5d868b617554ea1cd4c6702e5ef2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11704,6 +11780,10 @@ PrefabInstance:
     - target: {fileID: 1263815708417979845, guid: eddead3eb0cdd0c44a6727f246e6cbd3, type: 3}
       propertyPath: m_Name
       value: Fence_wall_corner_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263815708417979845, guid: eddead3eb0cdd0c44a6727f246e6cbd3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1263815708417979845, guid: eddead3eb0cdd0c44a6727f246e6cbd3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12177,7 +12257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426738518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12542,6 +12622,10 @@ PrefabInstance:
       value: Cemetery_Pillar A (7)
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12606,6 +12690,10 @@ PrefabInstance:
     - target: {fileID: 2779171377266700145, guid: 1285c19972034a94c9b934a5d404108a, type: 3}
       propertyPath: m_Name
       value: Fence_wall_corner_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779171377266700145, guid: 1285c19972034a94c9b934a5d404108a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2779171377266700145, guid: 1285c19972034a94c9b934a5d404108a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12718,6 +12806,10 @@ PrefabInstance:
       value: Fence Wall B (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1963584078338303645, guid: 9553b621a564db5419b3bf2d8cd74852, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963584078338303645, guid: 9553b621a564db5419b3bf2d8cd74852, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12809,7 +12901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1527686240
 Transform:
   m_ObjectHideFlags: 0
@@ -14065,7 +14157,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694264626}
-  m_LocalRotation: {x: 0.09025819, y: 0.09813256, z: -0.008937422, w: 0.9910316}
+  m_LocalRotation: {x: 0.09025819, y: 0.098132566, z: -0.008937422, w: 0.9910316}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14194,6 +14286,10 @@ PrefabInstance:
     - target: {fileID: 7807726219535789497, guid: 9a74cc6b83a66804e9d5e39101bf63b5, type: 3}
       propertyPath: m_Name
       value: Cemetery_Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807726219535789497, guid: 9a74cc6b83a66804e9d5e39101bf63b5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7807726219535789497, guid: 9a74cc6b83a66804e9d5e39101bf63b5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14766,6 +14862,10 @@ PrefabInstance:
       value: Fence Wall C (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987964543598985638, guid: b55aa1b82b5fb2140b82556015f4afea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -14852,6 +14952,10 @@ PrefabInstance:
     - target: {fileID: 2779171377266700145, guid: 1285c19972034a94c9b934a5d404108a, type: 3}
       propertyPath: m_Name
       value: Fence_wall_corner_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779171377266700145, guid: 1285c19972034a94c9b934a5d404108a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2779171377266700145, guid: 1285c19972034a94c9b934a5d404108a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15577,6 +15681,10 @@ PrefabInstance:
     - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
       propertyPath: m_Name
       value: Fence Wall A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1723528090924883111, guid: 11bd476b5dfbb6048980a0e946822042, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16447,6 +16555,10 @@ PrefabInstance:
       value: Fence Wall B (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1963584078338303645, guid: 9553b621a564db5419b3bf2d8cd74852, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963584078338303645, guid: 9553b621a564db5419b3bf2d8cd74852, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16782,6 +16894,10 @@ PrefabInstance:
       value: Cemetery_Pillar A (4)
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16912,6 +17028,10 @@ PrefabInstance:
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_Name
       value: Cemetery_Pillar A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 109666656001828891, guid: f36c14260df6a7b4796945148db729b0, type: 3}
       propertyPath: m_StaticEditorFlags
